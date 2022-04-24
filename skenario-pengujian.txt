@@ -1,0 +1,179 @@
+UNIT TEST
+
+- User View Model
+
+a. Ketika berhasil memuat data list story dengan lokasi (loadAllStoriesWithLocation)
+   - Memastikan mengembalikan response.error adalah false
+   - Memastikan data list story tidak kosong atau null
+   - Memastikan jumlah data sesuai dengan yang diharapkan
+
+   Ketika gagal memuat data list story dengan lokasi (loadAllStoriesWithLocation)
+   - Memastikan mengembalikan response.error adalah true
+   - Memastikan data list story kosong atau null
+   - Memastikan jumlah data sesuai dengan yang diharapkan 
+
+b. Ketika berhasil membuat akun baru (register)
+   - Memastikan mengembalikan response.error adalah false
+
+   Ketika gagal membuat akun baru (register)
+   - Memastikan mengembalikan response.error adalah true
+   
+c. Ketika berhasil mengunggah story (uploadStory)
+   - Memastikan mengembalikan response.error adalah false
+
+   Ketika gagal mengunggah story (uploadStory)
+   - Memastikan mengembalikan response.error adalah true
+
+d. Ketika berhasil masuk ke akun (login)
+   - Memastikan mengembalikan response.error adalah false
+   - Memastikan mengembalikan response.loginResult tidak null
+
+   Ketika gagal masuk ke akun (login)
+   - Memastikan mengembalikan response.error adalah true
+   - Memastikan mengembalikan response.loginResult bernilai null
+   
+e. Ketika user melakukan keluar dari akun (logout)
+   - Memastikan fungsi UserPreferences.removeUserPreference dipanggil
+   
+f. Ketika user sudah login dan datastore tersedia (loadPreferences)
+   - Memastikan token tidak kosong
+   - Memastikan state login bernilai true
+
+   Ketika user belum login dan datastore tidak tersedia (loadPreferences)
+   - Memastikan token bernilai empty string
+   - Memastikan state login bernilai false
+   
+g. Ketika berhasil memuat data list story menggunakan paging (loadAllStories)
+   - Memastikan data list story tidak kosong atau tidak null
+   - Memastikan jumlah data sesuai dengan yang diharapkan
+   - Memastikan nilai data sesuai dengan nilai data yang diharapkan
+   
+   Ketika gagal memuat data list story menggunakan paging (loadAllStories)
+   - Memastikan data list story bernilai empty atau null
+   - Memastikan jumlah data sesuai dengan yang diharapkan
+
+=====
+
+- User Repository
+
+a. Ketika berhasil membuat sebuah akun (createUser)
+   - Memastikan nilai response.error bernilai false
+   - Memastikan nilai response.message sesuai dengan yang diharapkan
+   
+b. Ketika berhasil masuk ke sebuah akun (authenticate)
+   - Memastikan nilai response.error bernilai false
+   - Memastikan nilai response.loginResult tidak bernilai null
+   - Memastikan nilai response.loginResult.name sesuai dengan yang diharapkan
+
+c. Ketika berhasil memuat list story tanpa lokasi (allStories)
+   - Memastikan nilai response.error bernilai false
+   - Memastikan nilai response.listStory tidak bernilai empty
+   - Memastikan nilai jumlah data sesuai dengan yang diharapkan
+   
+d. Ketika berhasil memuat list story dengan lokasi (allStoriesWithLocation)
+   - Memastikan nilai response.error bernilai false
+   - Memastikan nilai response.listStory tidak bernilai empty
+   - Memastikan nilai jumlah data sesuai dengan yang diharapkan
+
+e. Ketika berhasil mengunggah story (uploadStory)
+   - Memastikan nilai response.error bernilai false
+   - Memastikan nilai response.message sesuai dengan yang diharapkan
+
+f. Ketika menambahkan prefix untuk token (setupToken)
+   - Memastikan nilai token memiliki awalan Bearer
+
+g. Ketika mengubah file menjadi Multipart.Body (fileToMultipart)
+   - Memastikan content type sesuai dengan yang diharapkan
+
+h. Ketika mengubah string menjadi RequestBody (setupRequestBody)
+   - Memastikan content type sesuai dengan yang diharapkan
+
+=====
+
+- User Preferences Data Store
+
+a. Ketika value datastore tersedia
+   - Memastikan nilai token tidak kosong
+   - Memastikan nilai state login adalah true
+   - Meastikan nilai token sesuai dengan yang diharapkan
+   
+   Ketika value datastore tidak tersedia
+   - Memastikan nilai token kosong
+   - Memastikan nilai state login adalah false
+   - Meastikan nilai token sesuai dengan yang diharapkan
+
+b. Ketika menyimpan nilai datastore
+   - Memastikan nilai token tidak kosong
+   - Memastikan nilai state login adalah true
+   
+c. Ketika menghapus nilai datastore
+   - Memastikan nilai token kosong
+   - Memastikan nilai state login adalah false
+   
+====================
+
+INTEGRATION TESTING
+
+- Stories Fragment
+
+a. Ketika berhasil memuat list story
+   - Memastikan recycler view tampil
+   - Memastikan terdapat nama author yang diharapkan
+   - Memastikan recycler view item memiliki deskripsi yang diharapkan
+
+   Ketika gagal memuat list story
+   - Memastikan terdapat image view dengan id iv_empty_story yang tampil di layar
+   - Memastikan terdapat text view dengan id tv_empty yang tampil di layar
+   - Memastikan terdapat teks pesan informasi bahwa data kosong yang tampil di layar
+   
+====================
+
+UI TEST
+
+- Register Activity
+
+a. Ketika nilai input kosong
+   - Memastikan terdapat error teks pada input nama yang kosong
+   - Memastikan terdapat error teks pada input email yang kosong
+   - Memastikakn terdapat error teks pada input password yang kosong
+   
+b. Ketika input tidak sesuai dengan persyaratan
+   - Memastikan terdapat error teks pada input email yang tidak sesuai persyaratan
+   - Memastikan terdapat error teks pada input password yang tidak sesuai persyaratan
+   
+=====
+
+- Login Activity
+
+a. Ketika nilai input kosong
+   - Memastikan terdapat error teks pada input email yang kosong
+   - Memastikakn terdapat error teks pada input password yang kosong
+   
+b. Ketika input tidak sesuai dengan persyaratan
+   - Memastikan terdapat error teks pada input email yang tidak sesuai persyaratan
+   - Memastikan terdapat error teks pada input password yang tidak sesuai persyaratan
+   
+=====
+
+- Main Activity
+
+a. Ketika memuat list story
+   - Memastikan recycler view tampil di layar
+   - Memastikan recycler view bisa di scroll ke posisi 5
+
+b. Ketika memuat detail story
+   - Memastikan recylcer view tampil di layar
+   - Memastikan berhasil pindah activity ke detail story
+   - Memastikan terdapat gambar story di layar
+   - Memastikan terdapat nama pengguna di layar
+   
+c. Ketika menampilkan data lokasi para pengguna
+   - Memastikan terdapat button untuk menampilkan maps
+   - Memastikan berhasil pindah ke halaman maps
+   - Memastikan terdapat tampilan maps yang tampil di layar
+   - Memastikan terdapat button untuk menampilkan list story 
+   - Memastikan berhasil pindah ke halaman list story
+   
+d. Ketika menampilkan tampilan upload story
+   - Memastikan terdapat button untuk menampilkan form upload story
+   - Memastikan berhasil pindah ke halaman upload story

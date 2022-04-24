@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Story App</string>
+
+    <string name="input_name">Your Name</string>
+    <string name="input_email">Your Email</string>
+    <string name="input_password">Your Password</string>
+    <string name="input_description">What would you like to share?</string>
+    <string name="input_location">(Optional) Your location</string>
+    <string name="input_info_password">Type a password of at least 6 characters</string>
+    <string name="input_error_password">Less than 6 characters</string>
+    <string name="input_error_email">Invalid email entered</string>
+    <string name="input_error_empty">Please fill out this field</string>
+    <string name="input_error_image">Please insert the file</string>
+
+    <string name="button_register">Register</string>
+    <string name="button_login">Login</string>
+    <string name="button_upload">Upload a story</string>
+    <string name="button_list">Show list story</string>
+    <string name="button_refresh">Refresh</string>
+
+    <string name="welcome">Welcome to Story Sharing!</string>
+    <string name="welcome_description">Do you like telling stories? This place is for you. Various stories have been shared by many people, now it\'s your turn!</string>
+    <string name="login">Welcome back!</string>
+    <string name="login_description">Let\'s continue the story with the others</string>
+    <string name="register">Create an account</string>
+    <string name="register_description">Are you ready to share your story? Let\'s begin!</string>
+
+    <string name="empty_map_style">Use default style</string>
+    <string name="empty_address">Unknown address</string>
+    <string name="empty_location">Location is not found. Try again!</string>
+    <string name="empty_stories">Oops! Data not available</string>
+    <string name="created_at">Uploaded on %s</string>
+
+    <string name="camera_open_failed">Failed to open the camera</string>
+    <string name="camera_permission_denied">Camera not allowed</string>
+    <string name="failed_take_photo">Failed to take pictures</string>
+    <string name="choose_picture">Choose a picture</string>
+
+    <string name="title_menu_logout">Logout</string>
+    <string name="title_menu_language">Language</string>
+
+    <string name="content_description_ic_camera">Take a picture</string>
+    <string name="content_description_ic_switch_camera">Switch camera</string>
+    <string name="content_description_ic_login">Image login</string>
+    <string name="content_description_ic_register">Image register</string>
+    <string name="content_description_ic_welcome">Image welcome</string>
+    <string name="content_description_ib_location">Share location</string>
+    <string name="content_description_ib_camera">Open camera</string>
+    <string name="content_description_ib_gallery">Open Gallery</string>
+    <string name="content_description_image_story">Image story</string>
+    <string name="content_description_image_upload">Image upload</string>
+    <string name="content_description_image_empty">Image empty data</string>
+    <string name="content_description_fab_write">Write a story</string>
+    <string name="content_description_fab_maps">Show location user</string>
+
+    <string name="error_state">Oops! Something went wrong</string>
+</resources>

@@ -1,0 +1,96 @@
+{
+  "error": false,
+  "message": "Stories fetched successfully",
+  "listStory": [
+    {
+      "id": "story-3zRvSFjJ444tDgKH",
+      "name": "tubagus",
+      "description": "test",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650150266835_8aBLEm2O.jpg",
+      "createdAt": "2022-04-16T23:04:26.841Z",
+      "lat": -7.4615765332204935,
+      "lon": 112.44376379996537
+    },
+    {
+      "id": "story--bZe-FI4DUlZuBKT",
+      "name": "Rumi",
+      "description": "Finally",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650136774239_Plnwf7De.jpg",
+      "createdAt": "2022-04-16T19:19:34.242Z",
+      "lat": 33.9683717795658,
+      "lon": 103.72842416167259
+    },
+    {
+      "id": "story-uDQC-4D6ETZe6bvo",
+      "name": "DD",
+      "description": "r",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650130323531_rZTAOT3f.jpg",
+      "createdAt": "2022-04-16T17:32:03.533Z",
+      "lat": 0.5103583,
+      "lon": 101.4492783
+    },
+    {
+      "id": "story-ppso001_trG6sGic",
+      "name": "DD",
+      "description": "zzzzzz",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650125170578_T4zx9dWA.jpg",
+      "createdAt": "2022-04-16T16:06:10.582Z",
+      "lat": 0.5103583,
+      "lon": 101.4492783
+    },
+    {
+      "id": "story-8PUs5xUFJToftHQm",
+      "name": "DD",
+      "description": "00000000000",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650125087467_3NtELqDM.jpg",
+      "createdAt": "2022-04-16T16:04:47.469Z",
+      "lat": 0.5103583,
+      "lon": 101.4492783
+    },
+    {
+      "id": "story-OmpFLu3EvkMpJzUf",
+      "name": "DD",
+      "description": "444444",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650125061669_rKD2ygHH.jpg",
+      "createdAt": "2022-04-16T16:04:21.671Z",
+      "lat": 0.5103583,
+      "lon": 101.4492783
+    },
+    {
+      "id": "story-O8YsLoPY2-j4YlsH",
+      "name": "DD",
+      "description": "ccc",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650124979288_7tv-oQ-6.jpg",
+      "createdAt": "2022-04-16T16:02:59.290Z",
+      "lat": 37.4220049,
+      "lon": -122.0840103
+    },
+    {
+      "id": "story-Z3A-XbnH8wmVgN_-",
+      "name": "DD",
+      "description": "uu",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650124777866_JkPAJyLe.jpg",
+      "createdAt": "2022-04-16T15:59:37.868Z",
+      "lat": 37.4220049,
+      "lon": -122.0840103
+    },
+    {
+      "id": "story-RWwhwRZ2Zx1BpRa8",
+      "name": "DD",
+      "description": "y",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650124688586_HeLyfPGX.jpg",
+      "createdAt": "2022-04-16T15:58:08.587Z",
+      "lat": 37.4220049,
+      "lon": -122.0840103
+    },
+    {
+      "id": "story-KrTfIDWQisP9a6GC",
+      "name": "DD",
+      "description": "u",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650124583462_scS1ZbTO.jpg",
+      "createdAt": "2022-04-16T15:56:23.463Z",
+      "lat": 37.4220049,
+      "lon": -122.0840103
+    }
+  ]
+}

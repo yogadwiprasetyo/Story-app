@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Berbagi Cerita</string>
+
+    <string name="input_name">Nama kamu</string>
+    <string name="input_email">Email kamu</string>
+    <string name="input_password">Password kamu</string>
+    <string name="input_description">Apa yang kamu ingin ceritakan?</string>
+    <string name="input_location">(Opsional) Lokasi kamu</string>
+    <string name="input_info_password">Masukkan password minimal 6 karakter</string>
+    <string name="input_error_password">Kurang dari 6 karakter</string>
+    <string name="input_error_email">Email yang dimasukkan tidak valid</string>
+    <string name="input_error_empty">Isi terlebih dahulu yaa</string>
+    <string name="input_error_image">Silakan masukkan file gambar terlebih dahulu</string>
+
+    <string name="button_register">Daftar</string>
+    <string name="button_login">Masuk</string>
+    <string name="button_upload">Unggah cerita</string>
+    <string name="button_list">Menampilkan daftar cerita</string>
+    <string name="button_refresh">Perbarui</string>
+
+    <string name="welcome">Selamat datang di Berbagi Cerita!</string>
+    <string name="welcome_description">Kamu suka bercerita? Tempat ini cocok untuk kamu. Berbagai cerita sudah dibagikan oleh banyak orang, sekarang giliran kamu!</string>
+    <string name="login">Selamat datang kembali!</string>
+    <string name="login_description">Mari kita lanjutkan bercerita bersama yang lain</string>
+    <string name="register">Membuat akun</string>
+    <string name="register_description">Sudah siap untuk membagikan cerita kamu? Ayo kita mulai!</string>
+
+    <string name="empty_map_style">Menggunakan tema awal</string>
+    <string name="empty_address">Alamat tidak diketahui</string>
+    <string name="empty_location">Lokasi tidak ditemukan. Coba lagi!</string>
+    <string name="empty_stories">Oops! Data tidak tersedia</string>
+    <string name="created_at">Diunggah pada %s</string>
+
+    <string name="camera_open_failed">Gagal membuka kamera</string>
+    <string name="camera_permission_denied">Kamera tidak diizinkan</string>
+    <string name="failed_take_photo">Gagal mengambil gambar</string>
+    <string name="choose_picture">Pilih gambar</string>
+
+    <string name="title_menu_logout">Keluar</string>
+    <string name="title_menu_language">Bahasa</string>
+
+    <string name="content_description_ic_camera">Mengambil foto</string>
+    <string name="content_description_ic_switch_camera">Ganti kamera</string>
+    <string name="content_description_ic_login">Gambar login</string>
+    <string name="content_description_ic_register">Gambar register</string>
+    <string name="content_description_ic_welcome">Gambar welcome</string>
+    <string name="content_description_ib_location">Bagikan lokasi</string>
+    <string name="content_description_ib_camera">Buka kamera</string>
+    <string name="content_description_ib_gallery">Buka galeri</string>
+    <string name="content_description_image_story">Gambar story</string>
+    <string name="content_description_image_upload">Gambar unggah</string>
+    <string name="content_description_image_empty">Gambar data kosong</string>
+    <string name="content_description_fab_write">Menulis sebuah cerita</string>
+    <string name="content_description_fab_maps">Menampilkan lokasi pengguna</string>
+
+    <string name="error_state">"Oops! Ada masalah yang terjadi"</string>
+</resources>
